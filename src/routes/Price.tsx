@@ -57,8 +57,6 @@ function Price({ coinId }: ChartProps) {
 
   const now = new Date();
   const thirtyMinutesAgo = new Date(now.getTime() - 30 * 60 * 1000); // 30분 전 시간
-  const oneHourAgo = new Date(now.getTime() - 60 * 60 * 1000); // 1시간 전 시간
-  const twoHourAgo = new Date(now.getTime() - 60 * 60 * 1000 * 2);
 
   // 가장 최근 데이터와 30분 전, 1시간 전 데이터 찾기
   const recentData = data[data.length - 1];

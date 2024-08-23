@@ -17,7 +17,7 @@ import { fetchCoinInfo, fetchCoinTickers } from "./api";
 const BackHome = styled.span`
   position: relative;
   font-size: 30px;
-  color: white;
+  color: ${(props) => props.theme.accentColor};
   right: 200px;
 `;
 
